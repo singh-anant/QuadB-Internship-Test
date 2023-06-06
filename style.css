@@ -16,6 +16,12 @@
   border-radius: 1px;
   color: #388087;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #388087;
 }
 .title {
   font-size: 30px;
@@ -34,3 +40,41 @@
   padding: 10px;
   font-size: 25px;
 }
+
+/* CSS for Header-->End */
+
+/* CSS for MoviesList +Card -->Start */
+.movies-list {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  color: #388087;
+}
+.card {
+  width: 12em;
+  border-radius: 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  margin: 22px;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  border-radius: 1px;
+}
+.card .c-name {
+  font-size: 25px;
+}
+.c-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* CSS for MoviesList +Card -->End */
