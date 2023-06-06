@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
+import { Link } from "react-router-dom";
 
 const MovieList = () => {
   const [allMovies, setAllMovies] = useState([]);
@@ -20,7 +21,17 @@ const MovieList = () => {
   return (
     <div className="movies-list">
       {allMovies.map((movie) => {
-        return <MovieCard {...movie?.show} key={movie?.show.id} />;
+        return (
+          <Link
+            style={{
+              textDecoration: "none",
+              color: "#388087",
+            }}
+            to={"/movie/" + movie.show.id}
+          >
+            <MovieCard {...movie?.show} key={movie?.show.id} />;
+          </Link>
+        );
       })}
     </div>
   );

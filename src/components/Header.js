@@ -7,17 +7,38 @@ const Header = () => {
       <div className="nav-items">
         <ul>
           <li>
-            <Link className=".link" to="/">
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "#388087",
+              }}
+              className=".link"
+              to="/"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link className=".link" to="/about">
+            <Link
+              className=".link"
+              to="/about"
+              style={{
+                textDecoration: "none",
+                color: "#388087",
+              }}
+            >
               About
             </Link>
           </li>
           <li>
-            <Link className=".link" to="/contact">
+            <Link
+              className=".link"
+              to="/contact"
+              style={{
+                textDecoration: "none",
+                color: "#388087",
+              }}
+            >
               Contact
             </Link>
           </li>
