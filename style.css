@@ -186,3 +186,35 @@
 .m-off:hover {
   background-color: #badfe7;
 }
+
+@media (max-width: 954px) {
+  .desciption {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .desciption .m-img {
+    width: 50em;
+    height: 40em;
+    margin-bottom: 20px;
+  }
+  .m-name {
+    font-size: 20px;
+  }
+  .m-wrap1 {
+    flex-direction: column;
+  }
+  .m-wrap2 {
+    flex-direction: column;
+  }
+  .m-wrap3 {
+    flex-direction: column;
+  }
+  .m-wrap4 {
+    flex-direction: column;
+  }
+  .m-wrap5 {
+    flex-direction: column;
+  }
+}
+/* CSS for MoviesInfo -->End */

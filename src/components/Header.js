@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-      <h1 className="title">MovieEscape</h1>
+      <h1 className="title">MoviE</h1>
       <div className="nav-items">
         <ul>
           <li>

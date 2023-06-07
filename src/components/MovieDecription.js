@@ -13,7 +13,7 @@ const MovieDecription = () => {
   async function getMovieInfo() {
     const data = await fetch("https://api.tvmaze.com/shows/" + id);
     const json = await data.json();
-    console.log(json?.summary);
+    console.log(json);
     setInfo(json?.summary);
     setMovieInfo(json);
   }
@@ -76,7 +76,7 @@ const MovieDecription = () => {
             {/* </a> */}
           </button>
           <button className="m-off">
-            <a href={movieInfo?.url} />
+            <a href={movieInfo?.officialSite} />
             Official Site
             {/* </a> */}
           </button>
